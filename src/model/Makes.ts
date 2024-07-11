@@ -2,24 +2,24 @@ import { Produto } from "./Produto";
 
 export class Makes extends Produto {
 
-private _tipoDeMake: string;
+private _corDaMake: string;
 
-	constructor(id: number, nome: string, tipo: number, preco: number, tipoDeMake: string) {
+	constructor(id: number, nome: string, tipo: number, preco: number, corDaMake: string) {
         super(id, nome, tipo, preco)
-		this._tipoDeMake = tipoDeMake;
+		this._corDaMake = corDaMake;
 	}
 
 	public get tipoDeMake(): string {
-		return this._tipoDeMake;
+		return this._corDaMake;
 	}
 
 	public set tipoDeMake(value: string) {
-		this._tipoDeMake = value;
+		this._corDaMake = value;
 	}
 
     public visualizar() {
         super.visualizar();
-        console.log(`Tipo de Make?: ${this._tipoDeMake}`);
+        console.log(`Tipo de Make?: ${this._corDaMake}`);
 
 }
 }
